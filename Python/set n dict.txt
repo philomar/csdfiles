@@ -1,0 +1,37 @@
+#sets
+animals = {'dog', 'elephant', 'lion'}
+
+#adding unto sets
+animals.add('monkey')
+
+#adding another set
+wild_animals = {'tiger', 'wolf', 'hyenas'}
+
+#using the update ffunction to add another set
+animals.update(wild_animals)
+
+
+#removing items from a set using the discard method
+animals.discard('hyenas')
+
+#removing items from a set using the remove method
+animals.remove('dog')
+
+#checking if an item is in a set
+print("tiger" in animals)
+
+
+#python set operations (union)
+
+domestic_animals = {'dog', 'cat', 'monkey', 'panda'}
+wild_animals = {'tiger', 'lion', 'elephant', 'panda'}
+animals = domestic_animals.union(wild_animals)
+print(animals)
+
+
+
+
+#intersection of sets
+animals = domestic_animals.intersection(wild_animals)
+animals
+
